@@ -19,11 +19,12 @@ function setup(){
 function draw(){
     background(50);
     
-    image(img,x,y, 200, 150)
+    image(img,x,y, 200, 150);
     
     //background changes when clicked
     if(mouseIsPressed){
-        background(255, 0, 200)
+        background(255, 0, 200);
+        image(img,x,y, 200, 150);
     }
     
     //this makes the cirlce move on its own
@@ -32,7 +33,8 @@ function draw(){
    }
    
    if(y + 150 > height || y < 0){
-       speedy = -speedy; 
+       speedy = -speedy;
+       
    }
    
     x = x + speedx;
